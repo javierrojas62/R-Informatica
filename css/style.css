@@ -79,9 +79,9 @@ footer {
 .social-icons a {
     margin: 10px;
 }
+
 /* iconos header */
 .icon {
-    width: 20px; /* Ajusta el tamaño según sea necesario */
-    margin-right: 5px; /* Añade un margen derecho para separar el icono del texto */
-    /* Puedes ajustar otros estilos aquí según tus necesidades */
+    width: 20px;
+    margin-right: 5px;
 }
