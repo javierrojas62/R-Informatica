@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Storm&family=Shrikhand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#imgLogo {
+    margin: 15px;
+    border-radius: 2vh;
+    height: 15vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+#imgLogo:hover {
+    transform: scale(1.1);
+}
+
+.buttonWhats {
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttonWhats:hover {
+    transform: scale(1.1);
+}
+
+header,
+nav {
+    background: linear-gradient(135deg, #4a90e2, #2f80ed);
+    padding: 20px;
+}
+
+body {
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: url('./img/puntero.svg'), auto;
+}
+
+
+#title {
+    margin: 3vh;
+}
+
+.textHome {
+    margin: 1.5vh;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(255, 230, 0);
+    font-family: "Shrikhand", serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilo para el efecto de zoom en las tarjetas */
+.card {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 10px;
+}
+/* iconos header */
+.icon {
+    width: 20px; /* Ajusta el tamaño según sea necesario */
+    margin-right: 5px; /* Añade un margen derecho para separar el icono del texto */
+    /* Puedes ajustar otros estilos aquí según tus necesidades */
+}
