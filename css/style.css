@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Añadido para incluir el padding y border en el width/height */
 }
-
 
 #imgLogo {
     margin: 15px;
@@ -38,7 +38,6 @@ body {
     font-family: Arial, sans-serif;
     cursor: url('./img/puntero.svg'), auto;
 }
-
 
 #title {
     margin: 3vh;
@@ -84,4 +83,70 @@ footer {
 .icon {
     width: 20px;
     margin-right: 5px;
+}
+
+/* Estilos para el buscador y categorías */
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buscador input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.buscador button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ajuste para la vista móvil */
+@media (max-width: 767px) {
+    .buscador {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .buscador input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dropdown {
+        margin-top: 20px; /* Espacio entre el buscador y el botón de categorías */
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .dropdown-menu.show {
+        position: static; /* Soluciona el problema de ocultamiento en dispositivos móviles */
+        float: none;
+    }
+}
+
+/* Estilos para la categoría en la vista de escritorio */
+@media (min-width: 768px) {
+    .col-md-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alinear arriba */
+        align-items: stretch; /* Ajustar a lo largo del eje principal */
+        margin-top: 20px; /* Espacio entre el buscador y el botón de categorías */
+    }
+
+    .dropdown {
+        width: 100%; /* Asegura que el botón ocupe todo el ancho */
+    }
 }
